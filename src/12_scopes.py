@@ -6,6 +6,7 @@ x = 12
 
 def change_x():
     x = 99
+    print(x)#add print
 
 change_x()
 
@@ -20,13 +21,14 @@ def outer():
 
     def inner():
         y = 999
+        print(y) #add print here
 
     inner()
 
     # This prints 120. What do we have to change in inner() to get it to print
     # 999?
     # Note: Google "python nested function scope".
-    print(y)
+    print(y) #delete this one to onlyi print 999
 
 
 outer()

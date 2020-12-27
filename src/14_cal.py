@@ -30,3 +30,24 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+year = int(input("input the year: "))
+month = int(input("Input the month: "))
+
+now = datetime.now()
+
+print(now.strftime("%y"))
+def calendario(year, month) :
+
+  if year == 0 and month == 0:
+    x = datetime.now()
+    print(x.strftime("%B"))
+  elif year == 0 and month != 0:
+    print(calendar.month(2020,month))
+  elif year != 0 and month != 0:
+    print(calendar.month(year,month))
+  else:
+    print("please enter int year and month")
+
+
+calendario(year, month)
