@@ -18,4 +18,13 @@ f.close()
 # then close the file. Open up "bar.txt" and inspect it to make
 # sure that it contains what you expect it to contain
 
+f = open("src/bar.txt", mode="w", encoding="utf-8")
+f.write("Hello world")
+f.write("New text file")
+f.write("Awesome dude")
+
+f.close()
+
+file = open("src/bar.txt", "r")
+print(file.read())
 # YOUR CODE HERE
